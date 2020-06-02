@@ -81,6 +81,7 @@ for i in processing_file:
     # plt.imshow(np.asarray(img_new))
     # plt.show()
 
+    #Patient idを図に記入する
     draw = ImageDraw.Draw(img_new)  # im上のImageDrawインスタンスを作る
     font_path = 'C:\Windows\Fonts\meiryo.ttc'  # Windowsのフォントファイルへのパス
     font_size = 100 # フォントサイズ
