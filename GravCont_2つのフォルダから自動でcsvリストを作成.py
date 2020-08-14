@@ -26,4 +26,5 @@ df = df.sort_values("image_name", ascending=True) #画像番号順に並び替�
 df = df.reset_index(drop=True) #indexがばらばらになったので振りなおす
 print(df)
 
+#CSVとして出力
 df.to_csv("C:\\Users\\ykita\\OneDrive\\デスクトップ\\Hum_eval.csv", encoding="shift_jis")
