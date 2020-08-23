@@ -28,15 +28,18 @@ import shutil
 
 """
 
-orig_path = "/Users/kitaguchi/Desktop/grav_add"
-dst_path = "/Users/kitaguchi/Desktop/Grav_bootcamp"  # フォルダ名
+orig_path = "/Users/kitaguchi/Desktop/cont_add"
+dst_path = "/Users/kitaguchi/Desktop/Grav_bootcamp/Posttrain/cont"  # フォルダ名
 if not os.path.exists(dst_path):  # ディレクトリがなかったら
     os.mkdir(dst_path)  # 作成したいフォルダ名を作成
-copy_num = 5  # 移動したいファイルの数
+copy_num = 51  # 移動したいファイルの数
 
-files = glob.glob(orig_path + "\\*")
+files = glob.glob(orig_path + "/*")
 print(files)
 sample_files = random.sample(files, copy_num)  # 規定数のファイルを無作為に選択
 
 for p in sample_files:  # 選択したファイルを目的フォルダにコピー
-    shutil.copy(p, dst_path)
+    shutil.move(p, dst_path)
+    print(p)
+
+print("process done!")
