@@ -42,4 +42,4 @@ for p in sample_files:  # 選択したファイルを目的フォルダにコピ
     shutil.move(p, dst_path)
     print(p)
 
-print("process done!")
+print("process done!!")
